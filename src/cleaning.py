@@ -66,7 +66,7 @@ def clean_netflix_titles(df: pd.DataFrame) -> pd.DataFrame:
 
     if "date_added" in cleaned.columns:
         cleaned["date_added"] = pd.to_datetime(cleaned["date_added"], errors="coerce")
-        cleaned["added_year"] = cleaned["date_added"].dt.year
+        cleaned["added_year"] = cleaned["date_added"].dt.year.astype("Int64")
         cleaned["added_month"] = cleaned["date_added"].dt.to_period("M").astype(str)
 
     if "release_year" in cleaned.columns:
