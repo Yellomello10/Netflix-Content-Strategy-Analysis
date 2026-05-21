@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook source-build='2020.4.0 (20204.20.1106.0321)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDseBindings flag='true' />
+    <SchemaRenderingDbConnections flag='true' />
+    <SharedXmlProperties flag='true' />
+  </document-format-change-manifest>
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='Netflix Titles (Clean)' inline='true' name='federated.netflix_titles_clean' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Netflix Titles (Clean)' name='textscan.netflix_titles_clean'>
+            <connection class='textscan' directory='.' filename='netflix_titles_clean.csv' format='local' name='textscan.netflix_titles_clean' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.netflix_titles_clean' name='netflix_titles_clean.csv' table='[netflix_titles_clean#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Type Distribution' inline='true' name='federated.type_distribution' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Type Distribution' name='textscan.type_distribution'>
+            <connection class='textscan' directory='.' filename='type_distribution.csv' format='local' name='textscan.type_distribution' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.type_distribution' name='type_distribution.csv' table='[type_distribution#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Type Distribution by Year' inline='true' name='federated.type_distribution_by_year' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Type Distribution by Year' name='textscan.type_distribution_by_year'>
+            <connection class='textscan' directory='.' filename='type_distribution_by_year.csv' format='local' name='textscan.type_distribution_by_year' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.type_distribution_by_year' name='type_distribution_by_year.csv' table='[type_distribution_by_year#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Top Genres' inline='true' name='federated.top_genres' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Top Genres' name='textscan.top_genres'>
+            <connection class='textscan' directory='.' filename='top_genres.csv' format='local' name='textscan.top_genres' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.top_genres' name='top_genres.csv' table='[top_genres#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Genre Trend by Year' inline='true' name='federated.genre_trend_by_year' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Genre Trend by Year' name='textscan.genre_trend_by_year'>
+            <connection class='textscan' directory='.' filename='genre_trend_by_year.csv' format='local' name='textscan.genre_trend_by_year' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.genre_trend_by_year' name='genre_trend_by_year.csv' table='[genre_trend_by_year#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Top Countries' inline='true' name='federated.top_countries' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Top Countries' name='textscan.top_countries'>
+            <connection class='textscan' directory='.' filename='top_countries.csv' format='local' name='textscan.top_countries' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.top_countries' name='top_countries.csv' table='[top_countries#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Country Trend by Year' inline='true' name='federated.country_trend_by_year' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Country Trend by Year' name='textscan.country_trend_by_year'>
+            <connection class='textscan' directory='.' filename='country_trend_by_year.csv' format='local' name='textscan.country_trend_by_year' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.country_trend_by_year' name='country_trend_by_year.csv' table='[country_trend_by_year#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Yearly Growth' inline='true' name='federated.yearly_growth' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Yearly Growth' name='textscan.yearly_growth'>
+            <connection class='textscan' directory='.' filename='yearly_growth.csv' format='local' name='textscan.yearly_growth' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.yearly_growth' name='yearly_growth.csv' table='[yearly_growth#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Monthly Growth' inline='true' name='federated.monthly_growth' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Monthly Growth' name='textscan.monthly_growth'>
+            <connection class='textscan' directory='.' filename='monthly_growth.csv' format='local' name='textscan.monthly_growth' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.monthly_growth' name='monthly_growth.csv' table='[monthly_growth#csv]' type='table' />
+      </connection>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane />
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' name='Sheet 1'>
+      <active />
+    </window>
+  </windows>
+</workbook>

@@ -34,9 +34,9 @@ Use the CSV files in this folder to build a Tableau dashboard from the cleaned N
 ## How To Use
 
 1. Run `python scripts/export_tableau_data.py`.
-2. Open Tableau Desktop.
-3. Connect to the CSV files in `outputs/tableau/`.
-4. Build each worksheet and combine them into a dashboard.
+2. Open **`outputs/tableau/netflix_dashboard.twb`** in Tableau Desktop.
+   * *Note: All 9 CSV datasets are already pre-linked as separate data sources using relative file paths!*
+3. Build each worksheet following the suggestions and combine them into a dashboard.
 
 ## Notes
 
